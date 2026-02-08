@@ -38,6 +38,11 @@
 - [ ] CNN 卷积神经网络
 - [ ] RNN 递归神经网络
 - [ ] LSTM 长短期记忆网络
+- [ ] 图神经网络 (GNN)
+- [ ] 生成对抗网络 (GAN)
+- [ ] 自动编码器 (AutoEncoder)
+- [ ] 优化算法 (SGD / Adam / RMSProp)
+- [ ] 正则化方法 (Dropout / BatchNorm)
 
 ### 大语言模型 (LLM)
 - [ ] Transformer 架构理解
@@ -48,6 +53,11 @@
 - [ ] 提示工程 (Prompt Engineering)
 - [ ] RAG (检索增强生成)
 - [ ] LangChain / LlamaIndex 框架
+- [ ] 指令微调 (Instruction Tuning)
+- [ ] 量化与蒸馏 (Quantization / Distillation)
+- [ ] LoRA / PEFT 参数高效微调
+- [ ] 多模态模型 (Vision-Language)
+- [ ] 评估基准 (MMLU / HELM / MT-Bench)
 
 ### 应用实战
 - [ ] 文本分类任务
@@ -92,6 +102,10 @@
 - [ ] 会话管理安全
 - [ ] 认证和授权机制
 - [ ] API 安全
+- [ ] SSRF 服务端请求伪造
+- [ ] XXE XML 外部实体
+- [ ] 反序列化漏洞
+- [ ] 安全编码规范 (SAST / DAST)
 
 ### 渗透测试
 - [ ] 信息收集
@@ -134,6 +148,9 @@
 - [ ] ARIMA 模型
 - [ ] 策略回测框架
 - [ ] VaR 风险度量
+- [ ] GARCH 波动率模型
+- [ ] 因子模型 (Fama-French)
+- [ ] 组合优化 (均值-方差 / Black-Litterman)
 
 ### 交易平台
 - [ ] 数据获取 API (yfinance、tushare)
@@ -199,9 +216,17 @@
 
 ## 🔗 相关项目
 
-- [AI 大模型学习笔记](./AI/)
-- [网络安全学习笔记](./Cybersecurity/)
-- [金融科技学习笔记](./Finance/)
+- [AI 大模型学习笔记](./AI/)（如：个人仓库 `victoysx/ai-llm-notes`）
+- [网络安全学习笔记](./Cybersecurity/)（如：个人仓库 `victoysx/cybersecurity-notes`）
+- [金融科技学习笔记](./Finance/)（如：个人仓库 `victoysx/fintech-notes`）
+- 参考仓库：
+  - Hugging Face Transformers: https://github.com/huggingface/transformers
+  - LangChain: https://github.com/langchain-ai/langchain
+  - LlamaIndex: https://github.com/run-llama/llama_index
+  - OWASP Top 10: https://github.com/OWASP/Top10
+  - Nmap: https://github.com/nmap/nmap
+  - Backtrader: https://github.com/mementum/backtrader
+  - VectorBT: https://github.com/polakowo/vectorbt
 
 ---
 
@@ -234,3 +259,31 @@
 ## 📄 许可证
 
 MIT License - 自由使用和修改
+
+---
+
+## 🧰 Python 项目：SkillTree Tracker
+
+本仓库新增了一个 Python 项目，用来管理和统计技能树数据。代码中包含大量注释，便于学习结构化项目的组织方式。
+
+### 目录结构
+
+```
+skilltree/
+  cli.py        # 命令行入口
+  config.py     # 配置管理
+  models.py     # 数据模型
+  storage.py    # JSON 存储
+  analytics.py  # 统计分析
+  services.py   # 业务服务层
+  utils/        # 工具函数
+```
+
+### 快速开始
+
+```bash
+python -m skilltree.cli summary
+python -m skilltree.cli add-skill "AI 大模型" "提示工程" --category "大语言模型" --notes "整理常见模式"
+```
+
+默认数据文件位于 `data/skilltree.json`，可通过 `--data` 参数指定其他路径。

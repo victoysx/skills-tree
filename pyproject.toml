@@ -1,0 +1,20 @@
+[project]
+name = "skilltree"
+version = "0.1.0"
+description = "A commented skill tree tracking project"
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+  {name = "skill-tree contributors"}
+]
+dependencies = []
+
+[project.scripts]
+skilltree = "skilltree.cli:main"
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "black"
