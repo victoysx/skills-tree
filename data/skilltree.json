@@ -1,0 +1,44 @@
+{
+  "owner": "victoysx",
+  "areas": [
+    {
+      "name": "AI 大模型",
+      "skills": [
+        {
+          "name": "Python 编程基础",
+          "category": "基础知识",
+          "completed": false,
+          "notes": "建议搭配实践项目巩固"
+        },
+        {
+          "name": "Transformer 架构理解",
+          "category": "大语言模型",
+          "completed": false,
+          "notes": "阅读原始论文并做笔记"
+        }
+      ]
+    },
+    {
+      "name": "网络安全",
+      "skills": [
+        {
+          "name": "Linux 系统加固",
+          "category": "系统安全",
+          "completed": false,
+          "notes": "从日志审计和权限管理开始"
+        }
+      ]
+    },
+    {
+      "name": "金融科技",
+      "skills": [
+        {
+          "name": "Python 金融编程",
+          "category": "量化交易",
+          "completed": false,
+          "notes": "整理常用数据源和分析库"
+        }
+      ]
+    }
+  ]
+}
